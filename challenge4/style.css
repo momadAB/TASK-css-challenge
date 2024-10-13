@@ -7,13 +7,12 @@ body {
 
 p {
   margin-top: 3px;
-
   margin-bottom: 0px;
 }
 
 .container {
-  --card-height: 200px;
-  --card-width: 200px;
+  --card-height: 400px;
+  --card-width: 400px;
 }
 
 .movie-card {
@@ -22,7 +21,7 @@ p {
   overflow: hidden;
   position: relative;
 
-  display: flex;
+  /* display: flex; */
 
   margin-inline: auto;
   margin-top: 5rem;
@@ -32,10 +31,10 @@ p {
   /* height: inherit; */
   width: inherit;
   z-index: -2;
-  overflow: hidden;
+  /* overflow: hidden; */
 }
 .movie-details-container {
-  height: 100px;
+  /* height: 100px; */
   overflow: scroll;
   align-self: flex-end;
 }
@@ -69,4 +68,8 @@ p {
 .movie-title {
   font-weight: bold;
   position: sticky;
+}
+
+p {
+  /* position: sticky; */
 }
