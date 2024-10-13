@@ -1,15 +1,53 @@
 /* Add your code in each class */
 body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  background-color: hsl(272, 61%, 20%);
+  color: aliceblue;
 }
+
+p {
+  margin-top: 3px;
+
+  margin-bottom: 0px;
+}
+
 .container {
+  --card-height: 200px;
+  --card-width: 200px;
 }
+
 .movie-card {
+  height: var(--card-height);
+  width: var(--card-width);
+  overflow: hidden;
+  position: relative;
+
+  display: flex;
+
+  margin-inline: auto;
+  margin-top: 5rem;
 }
 .movie-image {
+  position: absolute;
+  /* height: inherit; */
+  width: inherit;
+  z-index: -2;
+  overflow: hidden;
 }
 .movie-details-container {
+  height: 100px;
+  overflow: scroll;
+  align-self: flex-end;
 }
+
 .descriptions {
+  height: var(--card-height);
+  width: var(--card-width);
+
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+  padding: 10px;
 }
 
 /*A gift from us!*/
@@ -26,6 +64,9 @@ body {
     rgba(0, 0, 0, 0.75) 0%,
     rgba(0, 0, 0, 0) 100%
   );
+  z-index: -1;
 }
 .movie-title {
+  font-weight: bold;
+  position: sticky;
 }
